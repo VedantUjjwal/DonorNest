@@ -1,0 +1,49 @@
+/* Add smooth scrolling to the entire page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Add a transition effect for the scroll */
+.scroll-transition {
+    transition: all 0.6s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.scroll-transition.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add a subtle animation for the contact section when scrolled to */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#contact {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Add hover effect for scrollable elements */
+.scroll-target {
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: translateY(15px);
+}
+
+.scroll-target.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-target:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+} 
