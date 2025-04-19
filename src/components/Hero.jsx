@@ -12,12 +12,9 @@ function Hero() {
                     <p className="text-lg md:text-xl mb-8">
                         Join our mission to save lives through blood donation. Your contribution can make a difference.
                     </p>
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div className="flex justify-center">
                         <Link to="/donate" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg font-medium">
                             Donate Now
-                        </Link>
-                        <Link to="/signup" className="bg-white hover:bg-gray-100 text-red-600 px-8 py-3 rounded-lg font-medium">
-                            Register as Donor
                         </Link>
                     </div>
                 </div>
